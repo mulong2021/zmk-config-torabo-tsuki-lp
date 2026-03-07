@@ -20,13 +20,13 @@
     macros {
         lang1_base: lang1_base {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings = <&to 0>, <&kp LANGUAGE_1>;
         };
 
         lang2_base: lang2_base {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings = <&to 0>, <&kp LANGUAGE_2>;
         };
     };
@@ -34,7 +34,7 @@
     behaviors {
         lt_lang1_base: lt_lang1_base {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&lang1_base>;
@@ -42,7 +42,7 @@
 
         lt_lang2_base: lt_lang2_base {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&lang2_base>;
