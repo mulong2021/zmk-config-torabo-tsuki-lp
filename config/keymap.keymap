@@ -55,11 +55,11 @@
         layer_0 {
             display-name = "Base";
             bindings = <
-&none      &none     &none      &none      &none             &none                                    &none      &none     &none      &none    &none      &none
-&kp TAB    &kp Q     &kp W      &kp E      &kp R             &kp T                                    &kp Y      &kp U     &kp I      &kp O    &kp P      &kp MINUS
-&kp LCTRL  &kp A     &kp S      &kp D      &kp F             &kp G        &none                 &none     &kp H      &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z     &kp X      &kp C      &kp V             &kp B        &none                 &none     &kp N      &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp LS(NUMBER_1)
-&kp CAPS   &kp LWIN  &kp LC(Z)  &kp LC(Y)  &lt_lang2_base 2  &lt 3 SPACE  &lt_lang1_base 1      &kp BSPC  &kp ENTER  &none     &none      &none    &kp RALT   &kp RCTRL
+&none      &none     &none      &none      &none               &none                                      &none      &none     &none      &none    &none      &none
+&kp TAB    &kp Q     &kp W      &kp E      &kp R               &kp T                                      &kp Y      &kp U     &kp I      &kp O    &kp P      &kp MINUS
+&kp LCTRL  &kp A     &kp S      &kp D      &kp F               &kp G        &none                   &none     &kp H      &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z     &kp X      &kp C      &kp V               &kp B        &none                   &none     &kp N      &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp LS(NUMBER_1)
+&kp CAPS   &kp LWIN  &kp LC(Z)  &kp LC(Y)  &lt_lang2_base 2 0  &lt 3 SPACE  &lt_lang1_base 1 0      &kp BSPC  &kp ENTER  &none     &none      &none    &kp RALT   &kp RCTRL
             >;
         };
 
