@@ -127,12 +127,3 @@
         };
     };
 };
-
-&pointing_listener {
-    input-processors = <&zip_temp_layer 8 10000>;
-
-    scroller {
-        layers = <9>;
-        input-processors = <&zip_xy_to_scroll_mapper>;
-    };
-};
