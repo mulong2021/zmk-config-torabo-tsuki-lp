@@ -150,11 +150,11 @@
         layer_9 {
             display-name = "Scroll";
             bindings = <
-&none   &none   &none   &none   &none   &none                       &none   &none   &none   &none   &none   &none
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none       &none   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &none   &none   &trans  &trans  &trans
+&none   &none   &none   &none   &none        &none                            &none   &none   &none   &none   &none   &none
+&trans  &trans  &trans  &trans  &trans       &trans                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans  &none            &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &lang2_base  &trans  &lang1_base      &trans  &trans  &none   &none   &trans  &trans  &trans
             >;
         };
     };
