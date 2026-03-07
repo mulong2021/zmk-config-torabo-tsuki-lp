@@ -11,10 +11,10 @@ include:
     shield: torabo_tsuki_lp_right
     snippet: "studio-rpc-usb-uart input-trackball input-split"
     artifact-name: torabo_tsuki_lp_right_peripheral
-  - board: bmp_boost
+  - board: seeeduino_xiao_ble
     shield: torabo_tsuki_lp_dongle
     snippet: "studio-rpc-usb-uart split-central input-split-listener"
-    artifact-name: torabo_tsuki_lp_dongle_central
+    artifact-name: torabo_tsuki_lp_dongle_central_xiao_ble
   - board: bmp_boost
     shield: settings_reset
 
