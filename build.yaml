@@ -9,7 +9,7 @@ include:
     artifact-name: torabo_tsuki_lp_right_central
   - board: bmp_boost
     shield: torabo_tsuki_lp_right
-    snippet: "studio-rpc-usb-uart input-split"
+    snippet: "studio-rpc-usb-uart input-trackball input-split"
     artifact-name: torabo_tsuki_lp_right_peripheral
   - board: bmp_boost
     shield: torabo_tsuki_lp_dongle
