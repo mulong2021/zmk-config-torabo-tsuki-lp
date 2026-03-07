@@ -17,17 +17,49 @@
         };
     };
 
+    macros {
+        lang1_base: lang1_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&kp LANGUAGE_1>;
+        };
+
+        lang2_base: lang2_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&kp LANGUAGE_2>;
+        };
+    };
+
+    behaviors {
+        lt_lang1_base: lt_lang1_base {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&lang1_base>;
+        };
+
+        lt_lang2_base: lt_lang2_base {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&lang2_base>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             display-name = "Base";
             bindings = <
-&none      &none     &none      &none      &none             &none                                        &none      &none     &none      &none    &none      &none
-&kp TAB    &kp Q     &kp W      &kp E      &kp R             &kp T                                        &kp Y      &kp U     &kp I      &kp O    &kp P      &kp MINUS
-&kp LCTRL  &kp A     &kp S      &kp D      &kp F             &kp G        &none                 &none     &kp H      &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z     &kp X      &kp C      &kp V             &kp B        &none                 &none     &kp N      &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp LS(NUMBER_1)
-&kp CAPS   &kp LWIN  &kp LC(Z)  &kp LC(Y)  &lt 2 LANGUAGE_2  &lt 3 SPACE  &lt 1 LANGUAGE_1      &kp BSPC  &kp ENTER  &none     &none      &none    &kp RALT   &kp RCTRL
+&none      &none     &none      &none      &none               &none                                          &none      &none     &none      &none    &none      &none
+&kp TAB    &kp Q     &kp W      &kp E      &kp R               &kp T                                          &kp Y      &kp U     &kp I      &kp O    &kp P      &kp MINUS
+&kp LCTRL  &kp A     &kp S      &kp D      &kp F               &kp G        &none                   &none     &kp H      &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z     &kp X      &kp C      &kp V               &kp B        &none                   &none     &kp N      &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp LS(NUMBER_1)
+&kp CAPS   &kp LWIN  &kp LC(Z)  &kp LC(Y)  &lt_lang2_base 2 0  &lt 3 SPACE  &lt_lang1_base 1 0      &kp BSPC  &kp ENTER  &none     &none      &none    &kp RALT   &kp RCTRL
             >;
         };
 
@@ -48,7 +80,7 @@
 &none   &none    &none    &none   &none   &none                        &none   &none           &none           &none            &none       &none
 &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                       &trans  &trans          &kp UP_ARROW    &trans           &trans      &trans
 &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &none       &none   &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE  &trans
-&trans  &kp F11  &kp F12  &trans  &trans  &trans   &trans      &trans  &trans  &LC(C)          &LC(X)          &LC(V)           &trans      &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans   &trans      &trans  &trans  &kp LC(C)       &kp LC(X)       &kp LC(V)        &trans      &trans
 &trans  &trans   &trans   &trans  &trans  &trans   &trans      &trans  &trans  &none           &none           &trans           &trans      &trans
             >;
         };
