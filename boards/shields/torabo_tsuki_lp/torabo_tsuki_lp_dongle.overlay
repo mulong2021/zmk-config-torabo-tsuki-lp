@@ -1,15 +1,10 @@
+#include "torabo_tsuki_lp.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-#include "torabo_tsuki_lp_layouts.dtsi"
-
-&physical_layout_m {
-    transform = <&keymap_transform_1>;
-};
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &physical_layout_m;
     };
 
     mock_kscan: mock_kscan_0 {
