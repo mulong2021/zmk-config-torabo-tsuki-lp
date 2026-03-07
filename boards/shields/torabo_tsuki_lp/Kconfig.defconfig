@@ -17,3 +17,16 @@ config ZMK_MOUSE
     default y
  
 endif
+
+if SHIELD_TORABO_TSUKI_LP_DONGLE
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+config BT_MAX_CONN
+    default 6
+
+config BT_MAX_PAIRED
+    default 6
+
+endif

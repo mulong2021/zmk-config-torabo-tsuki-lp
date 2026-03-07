@@ -13,7 +13,7 @@ include:
     artifact-name: torabo_tsuki_lp_right_peripheral
   - board: seeeduino_xiao_ble
     shield: torabo_tsuki_lp_dongle
-    snippet: "studio-rpc-usb-uart split-central input-split-listener"
+    snippet: "studio-rpc-usb-uart split-central"
     artifact-name: torabo_tsuki_lp_dongle_central_xiao_ble
   - board: bmp_boost
     shield: settings_reset
