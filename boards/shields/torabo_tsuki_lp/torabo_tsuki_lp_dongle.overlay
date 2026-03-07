@@ -4,9 +4,10 @@
 
 / {
     leds {
+        compatible = "gpio-leds";
         bmp: bmp_led {
             gpios = <&gpio1 10 GPIO_ACTIVE_HIGH>;
-            label = "Status LED";
+            #gpio-cells = <2>;
         };
     };
 };
