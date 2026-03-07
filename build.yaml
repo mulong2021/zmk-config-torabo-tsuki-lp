@@ -8,6 +8,14 @@ include:
     snippet: "studio-rpc-usb-uart split-central input-trackball input-listener"
     artifact-name: torabo_tsuki_lp_right_central
   - board: bmp_boost
+    shield: torabo_tsuki_lp_right
+    snippet: "studio-rpc-usb-uart input-split"
+    artifact-name: torabo_tsuki_lp_right_peripheral
+  - board: bmp_boost
+    shield: torabo_tsuki_lp_dongle
+    snippet: "studio-rpc-usb-uart split-central input-split-listener"
+    artifact-name: torabo_tsuki_lp_dongle_central
+  - board: bmp_boost
     shield: settings_reset
 
 #  - board: bmp_boost
