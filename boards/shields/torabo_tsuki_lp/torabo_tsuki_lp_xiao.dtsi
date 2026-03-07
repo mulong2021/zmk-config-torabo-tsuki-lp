@@ -6,6 +6,7 @@
     chosen {
         zmk,physical-layout = &physical_layout_l;
         zmk,kscan = &kscan0;
+        // zmk,battery = &non_lipo_battery;
     };
 
     size_s_transform: keymap_transform_0 {
@@ -90,6 +91,17 @@
         compatible = "zmk,input-listener";
         status = "disabled";
     };
+
+/*
+    vbatt: vbatt {
+        // Disable default battery monitoring
+        status = "disabled";
+    };
+    non_lipo_battery: non_lipo_battery {
+        compatible = "zmk,non-lipo-battery";
+        io-channels = <&adc 4>; 
+    };
+*/
 };
 
 &pinctrl {
