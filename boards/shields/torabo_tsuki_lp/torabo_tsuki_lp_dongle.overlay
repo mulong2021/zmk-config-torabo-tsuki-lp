@@ -1,14 +1,14 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-&physical_layout0 {
+&physical_layout_0 {
     transform = <&default_transform>;
 };
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &physical_layout_s;
+        zmk,physical-layout = &physical_layout_0;
     };
 
     mock_kscan: mock_kscan_0 {
