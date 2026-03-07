@@ -128,7 +128,7 @@
     };
 };
 
-&trackball_listener {
+&pointing_listener {
     input-processors = <&zip_temp_layer 8 10000>;
 
     scroller {
