@@ -1,12 +1,3 @@
-#include "torabo_tsuki_lp.dtsi"
+#include "torabo_tsuki_lp_xiao.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-
-/ {
-    leds {
-        compatible = "gpio-leds";
-        bmp: bmp_led {
-            gpios = <&gpio1 10 GPIO_ACTIVE_HIGH>;
-        };
-    };
-};
