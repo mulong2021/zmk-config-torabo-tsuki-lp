@@ -1,5 +1,6 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include "torabo_tsuki_lp_layouts.dtsi"
 
 &physical_layout_s {
     transform = <&default_transform>;
