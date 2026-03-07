@@ -17,6 +17,10 @@ include:
     artifact-name: torabo_tsuki_lp_dongle_central_xiao_ble
   - board: bmp_boost
     shield: settings_reset
+    artifact-name: settings_reset_bmp_boost
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+    artifact-name: settings_reset_xiao_ble
 
 #  - board: bmp_boost
 #    shield: torabo_tsuki_lp_left
