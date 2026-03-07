@@ -20,13 +20,13 @@
     macros {
         lang1_base: lang1_base {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             bindings = <&to 0>, <&kp LANGUAGE_1>;
         };
 
         lang2_base: lang2_base {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             bindings = <&to 0>, <&kp LANGUAGE_2>;
         };
     };
