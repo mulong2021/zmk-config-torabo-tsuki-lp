@@ -1,7 +1,7 @@
 
 file_format: "1"
 id: torabo_tsuki_lp
-name: torabo_tsuki_lp
+name: ttl50
 type: shield
 features:
   - keys
@@ -12,3 +12,4 @@ outputs:
 siblings:
   - torabo_tsuki_lp_left
   - torabo_tsuki_lp_right
+  - torabo_tsuki_lp_dongle
