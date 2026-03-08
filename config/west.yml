@@ -29,6 +29,6 @@ manifest:
       revision: main
     - name: prospector-zmk-module
       remote: carrefinho
-      revision: v0.3
+      revision: main
   self:
     path: config
