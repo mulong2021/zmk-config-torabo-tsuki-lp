@@ -5,7 +5,7 @@
 &pointing_listener {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-        <&zip_temp_layer 1 1000>;
+        <&zip_temp_layer 1 700>;
 
     scroller {
         layers = <2>;
@@ -15,6 +15,15 @@
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
         process-next;
     };
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <350>;
+};
+
+&mkp_input_listener {
+    layers = <1>;
+    input-processors = <&zip_temp_layer 1 250>;
 };
 
 &size_s_transform {
