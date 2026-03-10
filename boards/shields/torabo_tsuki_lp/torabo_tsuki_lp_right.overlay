@@ -19,6 +19,12 @@
 
 &zip_temp_layer {
     require-prior-idle-ms = <350>;
+    excluded-positions = <
+        8 // I
+        19 // J
+        20 // K
+        21 // L
+    >;
 };
 
 &size_s_transform {
