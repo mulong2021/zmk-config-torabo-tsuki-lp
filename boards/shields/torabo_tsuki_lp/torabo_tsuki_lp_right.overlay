@@ -19,10 +19,15 @@
 
 &zip_temp_layer {
     require-prior-idle-ms = <350>;
+    excluded-positions = <
+        20 // I
+        33 // J
+        34 // K
+        35 // L
+    >;
 };
 
 &mkp_input_listener {
-    layers = <1>;
     input-processors = <&zip_temp_layer 1 250>;
 };
 
