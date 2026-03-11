@@ -1,7 +1,7 @@
 if SHIELD_TORABO_TSUKI_LP_LEFT || SHIELD_TORABO_TSUKI_LP_RIGHT || SHIELD_TORABO_TSUKI_LP_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "ttlm50"
+    default "torabo_tsuki"
 
 config ZMK_SPLIT
     default y
