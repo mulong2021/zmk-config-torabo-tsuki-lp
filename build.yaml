@@ -19,7 +19,7 @@ include:
     snippet: "studio-rpc-usb-uart input-trackball input-split"
     artifact-name: torabo_tsuki_lp_prospector_right_peripheral
   - board: seeeduino_xiao_ble
-    shield: torabo_tsuki_lp_dongle prospector_adapter
+    shield: torabo_tsuki_lp_dongle prospector_adapter input-split-listener
 #    snippet: "studio-rpc-usb-uart split-central input-split-listener"
     snippet: "studio-rpc-usb-uart split-central"
     artifact-name: torabo_tsuki_lp_prospector_dongle_central
