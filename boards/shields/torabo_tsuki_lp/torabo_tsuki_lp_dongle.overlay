@@ -271,19 +271,17 @@
     };
 };
 
-/*
 &zip_temp_layer {
     require-prior-idle-ms = <350>;
     excluded-positions = <
-        8  // I
-        19 // J
-        20 // K
-        21 // L
-        12 // Control
-        24 // Shift
+        20 // I
+        33 // J
+        34 // K
+        35 // L
+        24 // Control
+        38 // Shift
     >;
 };
-*/
 
 /*
 #include "torabo_tsuki_lp_xiao.dtsi"
