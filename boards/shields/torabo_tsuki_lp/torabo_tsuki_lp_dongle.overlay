@@ -256,6 +256,7 @@
     };
 };
 
+/*
 &pointing_device_split_listener {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -282,6 +283,7 @@
         24 // Shift
     >;
 };
+*/
 
 /*
 #include "torabo_tsuki_lp_xiao.dtsi"
