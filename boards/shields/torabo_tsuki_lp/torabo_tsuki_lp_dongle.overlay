@@ -238,6 +238,11 @@
             , <&key_physical_attrs 100 100 1550  460       0     0     0>
             ;
     };
+
+    pointing_listener: pointing_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+    };
 };
 
 &pointing_listener {
