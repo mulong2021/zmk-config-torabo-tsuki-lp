@@ -23,6 +23,20 @@ include:
     snippet: "studio-rpc-usb-uart split-central"
     artifact-name: torabo_tsuki_lp_prospector_dongle_central
 
+## torabo_tsuki_lp yads dongle screen central
+  - board: bmp_boost
+    shield: torabo_tsuki_lp_left
+    snippet: studio-rpc-usb-uart
+    artifact-name: torabo_tsuki_lp_yads_left_peripheral
+  - board: bmp_boost
+    shield: torabo_tsuki_lp_right
+    snippet: "studio-rpc-usb-uart input-trackball input-split"
+    artifact-name: torabo_tsuki_lp_yads_right_peripheral
+  - board: seeeduino_xiao_ble
+    shield: torabo_tsuki_lp_dongle dongle_screen
+    snippet: "studio-rpc-usb-uart split-central"
+    artifact-name: torabo_tsuki_lp_yads_dongle_central
+
 ## torabo_tsuki_lp left central (original)
 #  - board: bmp_boost
 #    shield: torabo_tsuki_lp_left
