@@ -245,8 +245,31 @@
     };
 };
 
-&pointing_listener {
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+&pointing_device_split_listener {
+    input-processors =
+        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+        <&zip_temp_layer 1 800>;
+
+    scroller {
+        layers = <2>;
+        input-processors =
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_scaler 1 24>,
+            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
+        process-next;
+    };
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <350>;
+    excluded-positions = <
+        8  // I
+        19 // J
+        20 // K
+        21 // L
+        12 // Control
+        24 // Shift
+    >;
 };
 
 /*
