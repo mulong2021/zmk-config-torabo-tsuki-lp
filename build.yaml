@@ -20,7 +20,7 @@ include:
     artifact-name: torabo_tsuki_lp_prospector_right_peripheral
   - board: seeeduino_xiao_ble
     shield: torabo_tsuki_lp_dongle prospector_adapter
-    snippet: "studio-rpc-usb-uart split-central input-split-listener"
+    snippet: "studio-rpc-usb-uart split-central"
     artifact-name: torabo_tsuki_lp_prospector_dongle_central
 
 ## torabo_tsuki_lp left central (original)
