@@ -237,10 +237,12 @@
             , <&key_physical_attrs 100 100 1550  460       0     0     0>
             ;
     };
-};
 
-&pointing_listener {
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+    pointing_listener: pointing_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+    };
 };
 
 
