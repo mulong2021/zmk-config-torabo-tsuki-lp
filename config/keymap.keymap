@@ -142,5 +142,5 @@
 */
 
 &mkp_input_listener {
-    input-processors = <&zip_temp_layer 1 250>;
+    input-processors = <&zip_temp_layer 1 900>;
 };
