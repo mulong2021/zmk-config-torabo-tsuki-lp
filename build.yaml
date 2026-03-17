@@ -1,4 +1,5 @@
 include:
+
 ## torabo_tsuki_lp right central (original)
   - board: bmp_boost
     shield: torabo_tsuki_lp_left
@@ -47,7 +48,7 @@ include:
 #    snippet: studio-rpc-usb-uart
 #    artifact-name: torabo_tsuki_lp_right_peripheral
 
-## torabo_tsuki_lp double ball (original)
+## torabo_tsuki_lp double-ball (original)
 #  - board: bmp_boost
 #    shield: torabo_tsuki_lp_left
 #    snippet: "studio-rpc-usb-uart input-trackball input-split"
