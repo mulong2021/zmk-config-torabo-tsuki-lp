@@ -12,7 +12,7 @@
         layers = <2>;
         input-processors =
             <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_scaler 1 30>,
+            <&zip_scroll_scaler 1 60>,
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
         process-next;
     };
