@@ -6,7 +6,7 @@
     input-processors =
         <&zip_xy_scaler 7 12>,
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-        <&zip_temp_layer 1 1500>;
+        <&zip_temp_layer 1 900>;
 
     scroller {
         layers = <2>;
@@ -19,7 +19,7 @@
 };
 
 &zip_temp_layer {
-    require-prior-idle-ms = <350>;
+    require-prior-idle-ms = <900>;
     excluded-positions = <
         8  // I
         19 // J
