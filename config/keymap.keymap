@@ -89,11 +89,11 @@
         layer_4 {
             display-name = "Control";
             bindings = <
-&none     &none    &none    &none      &none      &none                        &none      &none      &none      &none      &none       &none
-&kp ESC   &kp F1   &kp F2   &kp F3     &kp F4     &kp F5                       &none      &none      &kp UP     &none      &none       &none 
-&trans    &kp F6   &kp F7   &kp F8     &kp F9     &kp F10  &none       &none   &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp DELETE  &none 
-&trans    &kp F11  &kp F12  &kp LC(Z)  &kp LC(Y)  &none    &none       &none   &kp LC(X)  &kp LC(C)  &kp LC(V)  &none      &none       &none 
-&kp CAPS  &trans   &none    &none      &none      &none    &none       &trans  &trans     &none      &none      &none      &trans      &trans
+&none     &none    &none    &none   &none      &none                          &none      &none      &none      &none      &none       &none
+&kp ESC   &kp F1   &kp F2   &kp F3  &kp F4     &kp F5                         &none      &none      &kp UP     &none      &none       &none 
+&trans    &kp F6   &kp F7   &kp F8  &kp F9     &kp F10    &none       &none   &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp DELETE  &none 
+&trans    &kp F11  &kp F12  &none   &kp LC(Z)  &kp LC(Y)  &none       &none   &kp LC(X)  &kp LC(C)  &kp LC(V)  &none      &none       &none 
+&kp CAPS  &trans   &none    &none   &none      &none      &none       &trans  &trans     &none      &none      &none      &trans      &trans
             >;
         };
 
