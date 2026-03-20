@@ -45,11 +45,11 @@
         layer_0 {
             display-name = "Base";
             bindings = <
-&none      &none      &none  &none     &none               &none                                        &none        &none     &none      &none    &none      &none
-&kp TAB    &kp Q      &kp W  &kp E     &kp R               &kp T                                        &kp Y        &kp U     &kp I      &kp O    &kp P      &kp MINUS
-&kp LCTRL  &kp A      &kp S  &kp D     &kp F               &kp G      &none                   &none     &kp H        &kp J     &kp K      &kp L    &kp SEMI   &mt LSHFT SQT
-&kp LSHFT  &kp Z      &kp X  &kp C     &kp V               &kp B      &mo 6                   &none     &kp N        &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp LS(N1)
-&kp LC(Z)  &kp LC(Y)  &none  &kp LWIN  &lt_lang2_base 4 0  &kp SPACE  &lt_lang1_base 3 0      &kp BSPC  &lt 5 ENTER  &none     &none      &none    &kp RALT   &kp RCTRL
+&none          &none  &none  &none     &none               &none                                        &none        &none     &none      &none    &none      &none
+&kp TAB        &kp Q  &kp W  &kp E     &kp R               &kp T                                        &kp Y        &kp U     &kp I      &kp O    &kp P      &kp MINUS
+&kp LCTRL      &kp A  &kp S  &kp D     &kp F               &kp G      &none                   &none     &kp H        &kp J     &kp K      &kp L    &kp SEMI   &mt LSHFT SQT
+&kp LSHFT      &kp Z  &kp X  &kp C     &kp V               &kp B      &mo 6                   &none     &kp N        &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp LS(N1)
+&kp LC(LSHFT)  &none  &none  &kp LWIN  &lt_lang2_base 4 0  &kp SPACE  &lt_lang1_base 3 0      &kp BSPC  &lt 5 ENTER  &none     &none      &none    &kp RALT   &kp RCTRL
             >;
         };
 
@@ -89,11 +89,11 @@
         layer_4 {
             display-name = "Control";
             bindings = <
-&none     &none    &none    &none   &none   &none                        &none      &none      &none      &none      &none       &none
-&kp ESC   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                       &none      &none      &kp UP     &none      &none       &none 
-&trans    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &none       &none   &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp DELETE  &none 
-&trans    &kp F11  &kp F12  &none   &none   &none    &none       &none   &kp LC(X)  &kp LC(C)  &kp LC(V)  &none      &none       &none 
-&kp CAPS  &trans   &none    &none   &none   &none    &none       &trans  &trans     &none      &none      &none      &trans      &trans
+&none     &none    &none    &none      &none      &none                        &none      &none      &none      &none      &none       &none
+&kp ESC   &kp F1   &kp F2   &kp F3     &kp F4     &kp F5                       &none      &none      &kp UP     &none      &none       &none 
+&trans    &kp F6   &kp F7   &kp F8     &kp F9     &kp F10  &none       &none   &none      &kp LEFT   &kp DOWN   &kp RIGHT  &kp DELETE  &none 
+&trans    &kp F11  &kp F12  &kp LC(Z)  &kp LC(Y)  &none    &none       &none   &kp LC(X)  &kp LC(C)  &kp LC(V)  &none      &none       &none 
+&kp CAPS  &trans   &none    &none      &none      &none    &none       &trans  &trans     &none      &none      &none      &trans      &trans
             >;
         };
 
