@@ -8,7 +8,7 @@
             compatible = "zmk,input-processor-deadzone";
             #input-processor-cells = <0>;
             track-remainders;
-            deadzone = <1>;
+            deadzone = <3>;
         };
     };
 };
