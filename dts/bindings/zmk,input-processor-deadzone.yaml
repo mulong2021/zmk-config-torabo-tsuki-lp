@@ -10,6 +10,9 @@ properties:
     required: true
     const: 0
 
+  track-remainders:
+    type: boolean
+
   type:
     type: int
     default: 2 # INPUT_EV_REL
