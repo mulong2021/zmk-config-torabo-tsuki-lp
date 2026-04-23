@@ -4,6 +4,16 @@
 #include <physical_layouts.dtsi>
 
 / {
+    input_processors {
+        /omit-if-no-ref/ zip_scroll_deadzone: zip_scroll_deadzone {
+            compatible = "zmk,input-processor-deadzone";
+            #input-processor-cells = <0>;
+            deadzone = <1>;
+        };
+    };
+};
+
+/ {
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &physical_layout_l;
@@ -266,6 +276,7 @@
         input-processors =
             <&zip_x_scaler 1 2>,
             <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_deadzone>,
             <&zip_scroll_scaler 1 16>,
             <&zip_scroll_scaler 1 4>,
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;

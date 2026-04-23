@@ -2,6 +2,16 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
+/ {
+    input_processors {
+        /omit-if-no-ref/ zip_scroll_deadzone: zip_scroll_deadzone {
+            compatible = "zmk,input-processor-deadzone";
+            #input-processor-cells = <0>;
+            deadzone = <1>;
+        };
+    };
+};
+
 &pointing_listener {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -12,6 +22,7 @@
         input-processors =
             <&zip_x_scaler 1 2>,
             <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_deadzone>,
             <&zip_scroll_scaler 1 16>,
             <&zip_scroll_scaler 1 4>,
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
