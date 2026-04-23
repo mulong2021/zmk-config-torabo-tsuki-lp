@@ -6,5 +6,5 @@ if(CONFIG_SHIELD_TORABO_TSUKI_LP_LEFT OR CONFIG_SHIELD_TORABO_TSUKI_LP_RIGHT OR 
     zephyr_library_sources(src/board.c src/mini_trackpad_init_reg.c)
   endif()
 
-  zephyr_library_sources(src/input_processor_deadzone.c)
+  zephyr_library_sources(src/input_processor_dominant_axis.c)
 endif()

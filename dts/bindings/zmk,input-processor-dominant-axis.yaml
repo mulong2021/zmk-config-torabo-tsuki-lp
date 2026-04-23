@@ -1,6 +1,6 @@
-description: Deadzone filter for relative pointer or scroll events.
+description: Dominant-axis filter for relative pointer or scroll events.
 
-compatible: "zmk,input-processor-deadzone"
+compatible: "zmk,input-processor-dominant-axis"
 
 include: base.yaml
 
@@ -26,5 +26,13 @@ properties:
     default: 8 # INPUT_REL_WHEEL
 
   deadzone:
+    type: int
+    default: 1
+
+  dominance-ratio-num:
+    type: int
+    default: 1
+
+  dominance-ratio-den:
     type: int
     default: 1

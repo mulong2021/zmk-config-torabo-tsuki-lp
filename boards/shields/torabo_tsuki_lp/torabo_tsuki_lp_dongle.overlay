@@ -5,11 +5,13 @@
 
 / {
     input_processors {
-        /omit-if-no-ref/ zip_scroll_deadzone: zip_scroll_deadzone {
-            compatible = "zmk,input-processor-deadzone";
+        /omit-if-no-ref/ zip_scroll_dominant_axis: zip_scroll_dominant_axis {
+            compatible = "zmk,input-processor-dominant-axis";
             #input-processor-cells = <0>;
             track-remainders;
             deadzone = <3>;
+            dominance-ratio-num = <1>;
+            dominance-ratio-den = <1>;
         };
     };
 };
@@ -277,7 +279,7 @@
         input-processors =
             <&zip_x_scaler 1 4>,
             <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_deadzone>,
+            <&zip_scroll_dominant_axis>,
             <&zip_scroll_scaler 1 16>,
             <&zip_scroll_scaler 1 4>,
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
