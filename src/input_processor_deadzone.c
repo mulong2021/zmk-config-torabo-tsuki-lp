@@ -2,6 +2,7 @@
 
 #define DT_DRV_COMPAT zmk_input_processor_deadzone
 
+#include <stdlib.h>
 #include <zephyr/device.h>
 #include <zephyr/input/input.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -32,7 +33,7 @@ static int deadzone_handle_event(const struct device *dev, struct input_event *e
         return ZMK_INPUT_PROC_CONTINUE;
     }
 
-    if (ABS(event->value) <= cfg->deadzone) {
+    if (abs(event->value) <= cfg->deadzone) {
         event->value = 0;
     }
 
